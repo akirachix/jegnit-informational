@@ -1,0 +1,119 @@
+.services{
+  margin-top: 4%;
+}
+#needs{
+  color:#006838;
+}
+.fields{
+  display: flex;
+  gap: 1cm;
+  margin-top: 5cm;
+  margin-left: 1cm;
+  margin-right: 1cm;
+  width: 70%;
+  margin-left: 15%;
+}
+.fields p{
+  color: white;
+}
+.fields h2{
+  color: white;
+}
+.real-time_mgt{
+  background-image: url('images/real time tracking.jpg');
+  background-size: cover;
+  position: relative;
+  /* width: 25cm; */
+  /* height: 12cm; */
+  background-color: #006838;
+  border-radius: 20px;
+}
+.real-time_mgt::after{
+content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.real-time-content{
+/* background-color: white; */
+z-index: 2;
+position:relative;
+}
+.lending_mgt{
+background-image: url('images/lendingmngt.jpg');
+background-size: cover;
+position: relative;
+  width: 25cm;
+  height: 12cm;
+  background-color: #006838;
+  border-radius: 20px
+}
+.lending_mgt::after{
+content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.lending-content{
+z-index: 2;
+position:relative;
+}
+.inventory_mgt{
+background-image: url('images/inventorymanagement.jpg');
+background-size: cover;
+position: relative;
+  width: 25cm;
+  height: 12cm;
+  background-color: #006838;
+  border-radius: 20px;
+}
+.inventory_mgt::after{
+content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.inventory-content{
+z-index: 2;
+position:relative;
+}
+#quiz{
+  font-size: 250%;
+  height: 15vh;
+  text-align: center;
+    margin-top: 2em;
+    color: #FFA500;
+}
+@font-face {
+  font-family: body-light;
+  src: url(./fonts/fonnts.com-Magneta-Thin.otf);
+}
+@font-face {
+  font-family: body-bold;
+  src: url(./fonts/fonnts.com-Magneta-Book-Italic.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+  width: 99.2vw;
+  background-color: white;
+  font-family: body-light;
+  overflow-x: hidden;
+  /* position: relative; */
+  }
