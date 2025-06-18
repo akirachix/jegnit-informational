@@ -23,8 +23,8 @@
   background-image: url('images/real time tracking.jpg');
   background-size: cover;
   position: relative;
-  /* width: 25cm; */
-  /* height: 12cm; */
+  width: 27cm;
+  height: 12cm;
   background-color: #006838;
   border-radius: 20px;
 }
@@ -47,7 +47,7 @@ position:relative;
 background-image: url('images/lendingmngt.jpg');
 background-size: cover;
 position: relative;
-  width: 25cm;
+  width: 27cm;
   height: 12cm;
   background-color: #006838;
   border-radius: 20px
@@ -70,7 +70,7 @@ position:relative;
 background-image: url('images/inventorymanagement.jpg');
 background-size: cover;
 position: relative;
-  width: 25cm;
+  width: 27cm;
   height: 12cm;
   background-color: #006838;
   border-radius: 20px;
@@ -117,3 +117,26 @@ body{
   overflow-x: hidden;
   /* position: relative; */
   }
+  h1{
+    text-align: center;
+    font-size: 50px;
+  }
+.real-time-content p{
+    margin-top: 1cm;
+    font-size: 20px;
+    margin-left: 0.2px;
+    /* padding: 0.5px; */
+}
+h2{
+    margin-top: 2cm;
+}
+.lending-content p{
+       margin-top: 1cm;
+    font-size: 20px;
+    margin-left: 0.2px; 
+}
+.inventory-content p{
+          margin-top: 1cm;
+    font-size: 20px;
+    margin-left: 0.2px;  
+}
