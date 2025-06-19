@@ -7,7 +7,7 @@
 .fields{
   display: flex;
   gap: 1cm;
-  margin-top: 5cm;
+  margin-top: 3cm;
   margin-left: 1cm;
   margin-right: 1cm;
   width: 70%;
@@ -23,10 +23,10 @@
   background-image: url('images/real time tracking.jpg');
   background-size: cover;
   position: relative;
-  width: 27cm;
+  width: 35cm;
   height: 12cm;
-  background-color: #006838;
-  border-radius: 20px;
+  /* background-color: #006838; */
+  /* border-radius: 20px; */
 }
 .real-time_mgt::after{
 content: "";
@@ -42,15 +42,16 @@ content: "";
 /* background-color: white; */
 z-index: 2;
 position:relative;
+/* border-radius: 30px; */
 }
 .lending_mgt{
 background-image: url('images/lendingmngt.jpg');
 background-size: cover;
 position: relative;
-  width: 27cm;
+  width: 35cm;
   height: 12cm;
-  background-color: #006838;
-  border-radius: 20px
+  /* background-color: #006838; */
+  /* border-radius: 20px */
 }
 .lending_mgt::after{
 content: "";
@@ -66,14 +67,19 @@ content: "";
 z-index: 2;
 position:relative;
 }
+.lending-content h2{
+    margin-top: 0.8cm;
+}
+
+
 .inventory_mgt{
 background-image: url('images/inventorymanagement.jpg');
 background-size: cover;
 position: relative;
-  width: 27cm;
+  width: 35cm;
   height: 12cm;
-  background-color: #006838;
-  border-radius: 20px;
+  /* background-color: #006838; */
+  /* border-radius: 20px; */
 }
 .inventory_mgt::after{
 content: "";
@@ -124,19 +130,372 @@ body{
 .real-time-content p{
     margin-top: 1cm;
     font-size: 20px;
-    margin-left: 0.2px;
+    margin-left: 0.4cm;
     /* padding: 0.5px; */
+}
+.real-time-content h2{
+  margin-top: 0.8cm;
 }
 h2{
     margin-top: 2cm;
+    font-size: 40px;
+    margin-left: 1cm;
 }
 .lending-content p{
-       margin-top: 1cm;
+    margin-top: 1cm;
     font-size: 20px;
-    margin-left: 0.2px; 
+   margin-left: 0.4cm;
+   
 }
 .inventory-content p{
-          margin-top: 1cm;
+    margin-top: 1cm;
     font-size: 20px;
-    margin-left: 0.2px;  
+    margin-left: 0.4cm;
 }
+.inventory-content h2{
+    margin-top: 0.8cm;
+}
+#track{
+    text-align: center;
+    margin-top: 2cm;
+    font-size: 30px;
+     color: #FFA500;
+}
+@media screen and (min-width: 354px) and (max-width: 845px){
+.services{
+margin-top: 4%;
+}
+#needs{
+  color:#006838;
+}
+.fields{
+  display: flex;
+  gap: 1cm;
+  margin-top: 3cm;
+  margin-left: 1cm;
+  margin-right: 1cm;
+  width: 70%;
+  margin-left: 15%;
+  display: block;
+}
+.fields p{
+  color: white;
+}
+.fields h2{
+  color: white;
+}
+.real-time_mgt{
+  background-image: url('images/real time tracking.jpg');
+  background-size: cover;
+  position: relative;
+  width: 35cm;
+  height: 12cm;
+  /* background-color: #006838; */
+  /* border-radius: 20px; */
+}
+.real-time_mgt::after{
+content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.real-time-content{
+/* background-color: white; */
+z-index: 2;
+position:relative;
+/* border-radius: 30px; */
+}
+.lending_mgt{
+background-image: url('images/lendingmngt.jpg');
+background-size: cover;
+position: relative;
+  width: 35cm;
+  height: 12cm;
+  /* background-color: #006838; */
+  /* border-radius: 20px */
+}
+.lending_mgt::after{
+content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.lending-content{
+z-index: 2;
+position:relative;
+}
+.lending-content h2{
+    margin-top: 0.8cm;
+    margin-left: 0.2cm;
+}
+
+
+.inventory_mgt{
+background-image: url('images/inventorymanagement.jpg');
+background-size: cover;
+position: relative;
+  width: 35cm;
+  height: 12cm;
+  /* background-color: #006838; */
+  /* border-radius: 20px; */
+}
+.inventory_mgt::after{
+content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.inventory-content{
+z-index: 2;
+position:relative;
+}
+#quiz{
+  font-size: 250%;
+  height: 15vh;
+  text-align: center;
+    margin-top: 2em;
+    color: #FFA500;
+}
+@font-face {
+  font-family: body-light;
+  src: url(./fonts/fonnts.com-Magneta-Thin.otf);
+}
+@font-face {
+  font-family: body-bold;
+  src: url(./fonts/fonnts.com-Magneta-Book-Italic.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+  width: 99.2vw;
+  background-color: white;
+  font-family: body-light;
+  overflow-x: hidden;
+  /* position: relative; */
+  }
+  h1{
+    text-align: center;
+    font-size: 50px;
+  }
+.real-time-content p{
+    margin-top: 1cm;
+    font-size: 20px;
+    margin-left: 0.4cm;
+    /* padding: 0.5px; */
+}
+.real-time-content h2{
+  margin-top: 0.8cm;
+}
+h2{
+    margin-top: 2cm;
+    font-size: 40px;
+    margin-left: 1cm;
+}
+.lending-content p{
+    margin-top: 1cm;
+    font-size: 20px;
+   margin-left: 0.4cm;
+   
+}
+.inventory-content p{
+    margin-top: 1cm;
+    font-size: 20px;
+    margin-left: 0.4cm;
+}
+.inventory-content h2{
+    margin-top: 0.8cm;
+    margin-left: 0.2cm;
+}
+#track{
+    text-align: center;
+    margin-top: 2cm;
+    font-size: 30px;
+     color: #FFA500;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.services{
+margin-top: 4%;
+}
+#needs{
+  color:#006838;
+}
+.fields{
+  display: flex;
+  gap: 1cm;
+  margin-top: 3cm;
+  margin-left: 1cm;
+  margin-right: 1cm;
+  width: 70%;
+  margin-left: 15%;
+  display: block;
+}
+.fields p{
+  color: white;
+}
+.fields h2{
+  color: white;
+}
+.real-time_mgt{
+  background-image: url('images/real time tracking.jpg');
+  background-size: cover;
+  position: relative;
+  width: 35cm;
+  height: 12cm;
+  /* background-color: #006838; */
+  /* border-radius: 20px; */
+}
+.real-time_mgt::after{
+content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.real-time-content{
+/* background-color: white; */
+z-index: 2;
+position:relative;
+/* border-radius: 30px; */
+}
+.lending_mgt{
+background-image: url('images/lendingmngt.jpg');
+background-size: cover;
+position: relative;
+  width: 35cm;
+  height: 12cm;
+  /* background-color: #006838; */
+  /* border-radius: 20px */
+}
+.lending_mgt::after{
+content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.lending-content{
+z-index: 2;
+position:relative;
+}
+.lending-content h2{
+    margin-top: 0.8cm;
+    margin-left: 1.2cm;
+}
+
+
+.inventory_mgt{
+background-image: url('images/inventorymanagement.jpg');
+background-size: cover;
+position: relative;
+  width: 35cm;
+  height: 12cm;
+  /* background-color: #006838; */
+  /* border-radius: 20px; */
+}
+.inventory_mgt::after{
+content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.inventory-content{
+z-index: 2;
+position:relative;
+}
+#quiz{
+  font-size: 250%;
+  height: 15vh;
+  text-align: center;
+    margin-top: 2em;
+    color: #FFA500;
+}
+@font-face {
+  font-family: body-light;
+  src: url(./fonts/fonnts.com-Magneta-Thin.otf);
+}
+@font-face {
+  font-family: body-bold;
+  src: url(./fonts/fonnts.com-Magneta-Book-Italic.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+  width: 99.2vw;
+  background-color: white;
+  font-family: body-light;
+  overflow-x: hidden;
+  /* position: relative; */
+  }
+  h1{
+    text-align: center;
+    font-size: 50px;
+  }
+.real-time-content p{
+    margin-top: 1cm;
+    font-size: 28px;
+    margin-left: 0.4cm;
+    /* padding: 0.5px; */
+}
+.real-time-content h2{
+  margin-top: 1.2cm;
+}
+h2{
+    margin-top: 2cm;
+    font-size: 40px;
+    margin-left: 1cm;
+}
+.lending-content p{
+    margin-top: 1cm;
+    font-size: 28px;
+   margin-left: 0.4cm;
+   
+}
+.inventory-content p{
+    margin-top: 1cm;
+    font-size: 28px;
+    margin-left: 0.4cm;
+}
+.inventory-content h2{
+    margin-top: 0.8cm;
+    margin-left: 1.2cm;
+}
+#track{
+    text-align: center;
+    margin-top: 2cm;
+    font-size: 30px;
+     color: #FFA500;
+}
+}
+
