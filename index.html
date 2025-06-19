@@ -1,53 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="faqs.css">
+    <link rel="stylesheet" href="style.css">
     <title>AgriTech Informational Website</title>
 </head>
- <body>
+<body>
     <div id="quiz">What Do They Ask About Us?</div>
-
-        <div class="faqs" id="faqs">
-            <div class="questions">
-                <h3>Frequently Asked <br> Questions</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    <br> sed do eiusmod tempor.
-                </p>
-                <button class="learn_morebtn">Learn More</button>
+    <div class="faqs" id="faqs">
+        <div class="questions">
+            <h3>Frequently Asked <br> Questions</h3>
+            <p>
+                Have questions? Here you will <br>
+                find the answers most valued by<br>
+                our partners along with access<br>
+                to step by step instructions and support
+            </p>
+            <button class="learn_morebtn">Learn More</button>
+        </div>
+        <div class="faqs-list">
+            <button class="faq-btn">
+                <i class="fa fa-plus"></i>
+                <span>How do I change my password?</span>
+            </button>
+            <div class="faq-content">
+                <p>You can change your password in your account settings under "Security".</p>
             </div>
-            <div>
-                <button id="faqs-btn" onclick="faqsquiz()"><i class="fa fa-minus"></i>How do I change my
-                    password?</button><br>
-                <!-- <i class="fa fa-plus" style="font-size:48px;color:red"></i> -->
-                <div id="content" style="display: none;">
-                    <p> How do I set up a password? </p>
-                </div>
-                <button id="faqs-btn" onclick="faqsquiz()"><i class="fa fa-minus"></i> How do I request for a machine?
-                </button><br>
-                <!-- <i class="fa fa-plus" style="font-size:48px;color:red"></i> -->
-                <div id="content" style="display: none;">
-                    <p> How do I set up a password? </p>
-                </div>
-                <button id="faqs-btn" onclick="faqsquiz()"><i class="fa fa-minus"></i> How do I pay? </button><br>
-                <!-- <i class="fa fa-plus" style="font-size:48px;color:red"></i> -->
-                <div id="content" style="display: none;">
-                    <p> How do I set up a password? </p>
-                </div>
-                <button id="faqs-btn" onclick="faqsquiz()"><i class="fa fa-minus"></i> How can I view my loan requests?
-                </button><br>
-                <div id="content" style="display: none;">
-                    <p> How do I set up a password? </p>
-                </div>
+            <button class="faq-btn">
+                <i class="fa fa-plus"></i>
+                <span>How do I request for a machine?</span>
+            </button>
+            <div class="faq-content">
+                <p>Go to 'Request Machine' on your dashboard, fill the form and submit. Our support will contact you.</p>
+            </div>
+            <button class="faq-btn">
+                <i class="fa fa-plus"></i>
+                <span>How do I pay?</span>
+            </button>
+            <div class="faq-content">
+                <p>Payments can be made online through our payment portal using your preferred method.</p>
+            </div>
+            <button class="faq-btn">
+                <i class="fa fa-plus"></i>
+                <span>How can I view my loan requests?</span>
+            </button>
+            <div class="faq-content">
+                <p>Head to your profile and select "Loan Requests" to see your loan status and history.</p>
             </div>
         </div>
-        <script src="faqs.js"></script>
- </body>
- </html>
- 
- 
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

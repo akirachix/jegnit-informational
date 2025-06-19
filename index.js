@@ -1,25 +1,29 @@
-document.getElementById("content").style.display="none";
-        var flag =1;
-        function faqsquiz() {
-        if(flag==1)
-        {
-        document.getElementById("content").style.display="block"; 
-        flag=0;
-        }
-        else{
-        document.getElementById("content").style.display="none"; 
-        flag=1;
-  }
-};
 
-const wrapper = document.getElementById('testimonialWrapper');
-const nextBtn = document.getElementById('nextBtn');
-const prevBtn = document.getElementById('prevBtn');
+document.querySelectorAll('.faq-btn').forEach((btn) => {
+  btn.addEventListener('click', function () {
 
-let scrollAmount = 0;
-nextBtn.addEventListener('click', () => {
-  wrapper.scrollBy({ left: 270, behavior: 'smooth' });
+    document.querySelectorAll('.faq-btn').forEach((b) => {
+      if (b !== btn) {
+        b.classList.remove('active');
+        b.querySelector('i').classList.replace('fa-minus', 'fa-plus');
+        if (b.nextElementSibling) b.nextElementSibling.style.display = 'none';
+      }
+    });
+   
+    btn.classList.toggle('active');
+    const icon = btn.querySelector('i');
+    if (btn.classList.contains('active')) {
+      icon.classList.replace('fa-plus', 'fa-minus');
+      if (btn.nextElementSibling) btn.nextElementSibling.style.display = 'block';
+    } else {
+      icon.classList.replace('fa-minus', 'fa-plus');
+      if (btn.nextElementSibling) btn.nextElementSibling.style.display = 'none';
+    }
+  });
 });
-prevBtn.addEventListener('click', () => {
-  wrapper.scrollBy({ left: -270, behavior: 'smooth' });
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  const firstBtn = document.querySelector('.faq-btn');
+  if (firstBtn) firstBtn.click();
 });
