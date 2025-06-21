@@ -6,12 +6,12 @@
 }
 .fields{
   display: flex;
-  gap: 1cm;
+  gap: 0.5cm;
   margin-top: 3cm;
-  margin-left: 1cm;
-  margin-right: 1cm;
-  width: 70%;
-  margin-left: 15%;
+  /* margin-left: 0.5cm; */
+  margin-right: 5%;
+  /* width: 70%; */
+  margin-left: 10%;
 }
 .fields p{
   color: white;
@@ -23,10 +23,11 @@
   background-image: url('images/real time tracking.jpg');
   background-size: cover;
   position: relative;
-  width: 35cm;
+  width: 45cm;
   height: 12cm;
+  /* margin-right:10%; */
   /* background-color: #006838; */
-  /* border-radius: 20px; */
+  border-radius: 20px;
 }
 .real-time_mgt::after{
 content: "";
@@ -37,6 +38,7 @@ content: "";
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  border-radius: 20px;
 }
 .real-time-content{
 /* background-color: white; */
@@ -48,10 +50,10 @@ position:relative;
 background-image: url('images/lendingmngt.jpg');
 background-size: cover;
 position: relative;
-  width: 35cm;
-  height: 12cm;
-  /* background-color: #006838; */
-  /* border-radius: 20px */
+width: 45cm;
+height: 12cm;
+/* background-color: #006838; */
+border-radius: 20px;
 }
 .lending_mgt::after{
 content: "";
@@ -62,13 +64,14 @@ content: "";
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  border-radius: 20px;
 }
 .lending-content{
 z-index: 2;
 position:relative;
 }
 .lending-content h2{
-    margin-top: 0.8cm;
+    margin-top: 1.5cm;
 }
 
 
@@ -76,10 +79,11 @@ position:relative;
 background-image: url('images/inventorymanagement.jpg');
 background-size: cover;
 position: relative;
-  width: 35cm;
-  height: 12cm;
-  /* background-color: #006838; */
-  /* border-radius: 20px; */
+width: 45cm;
+height: 12cm;
+/* background-color: #006838; */
+border-radius: 20px;
+margin-right: 5%;
 }
 .inventory_mgt::after{
 content: "";
@@ -90,17 +94,18 @@ content: "";
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  border-radius: 20px;
 }
 .inventory-content{
 z-index: 2;
 position:relative;
+
 }
 #quiz{
-  font-size: 250%;
-  height: 15vh;
-  text-align: center;
-    margin-top: 2em;
-    color: #FFA500;
+    text-align: center;
+    margin-top: 2cm;
+    font-size: 30px;
+     color: #FFA500;
 }
 @font-face {
   font-family: body-light;
@@ -130,11 +135,11 @@ body{
 .real-time-content p{
     margin-top: 1cm;
     font-size: 20px;
-    margin-left: 0.4cm;
+    margin-left: 1cm;
     /* padding: 0.5px; */
 }
 .real-time-content h2{
-  margin-top: 0.8cm;
+  margin-top: 1.5cm;
 }
 h2{
     margin-top: 2cm;
@@ -144,16 +149,16 @@ h2{
 .lending-content p{
     margin-top: 1cm;
     font-size: 20px;
-   margin-left: 0.4cm;
+   margin-left: 1cm;
    
 }
 .inventory-content p{
     margin-top: 1cm;
     font-size: 20px;
-    margin-left: 0.4cm;
+    margin-left: 1cm;
 }
 .inventory-content h2{
-    margin-top: 0.8cm;
+    margin-top: 1.5cm;
 }
 #track{
     text-align: center;
@@ -161,341 +166,192 @@ h2{
     font-size: 30px;
      color: #FFA500;
 }
-@media screen and (min-width: 354px) and (max-width: 845px){
+
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 28px;
+    padding: 0 1rem;
+  }
+  .fields {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2cm 5%;
+  }
+  .real-time_mgt,
+  .lending_mgt,
+  .inventory_mgt {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+  }
+  .real-time-content,
+  .lending-content,
+  .inventory-content {
+    padding: 1rem;
+  }
+  .real-time-content h2,
+  .lending-content h2,
+  .inventory-content h2 {
+    font-size: 1.6rem;
+    margin-top: 1cm;
+  }
+  .real-time-content p,
+  .lending-content p,
+  .inventory-content p {
+    font-size: 1.2rem;
+  }
+  #track,
+  #quiz {
+    font-size: 1.5rem;
+    margin-top: 1cm;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  .fields {
+    flex-direction: column;
+    margin: 2cm 8%;
+    gap: 1.2rem;
+  }
+  .real-time_mgt,
+  .lending_mgt,
+  .inventory_mgt {
+    width: 100%;
+    min-height: 230px;
+    border-radius: 18px;
+  }
+  .real-time-content p,
+  .lending-content p,
+  .inventory-content p {
+    font-size: 1.7rem;
+  }
+  #track,
+  #quiz {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  h1 {
+    font-size: 36px;
+  }
+  .fields {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 3cm 5%;
+  }
+  .real-time_mgt,
+  .lending_mgt,
+  .inventory_mgt {
+    width: 80%;
+    min-height: 250px;
+  }
+  .real-time-content p,
+  .lending-content p,
+  .inventory-content p {
+    font-size: 1.8rem;
+  }
+  .real-time-content h2,
+  .lending-content h2,
+  .inventory-content h2{
+    font-size: 2.5rem;
+  }
+  #track{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+     color: #FFA500;
+}
 .services{
-margin-top: 4%;
+  margin-top: 4%;
+  font-size: 3.5rem;
 }
 #needs{
   color:#006838;
+  font-size: 2rem;
 }
-.fields{
-  display: flex;
-  gap: 1cm;
-  margin-top: 3cm;
-  margin-left: 1cm;
-  margin-right: 1cm;
-  width: 70%;
-  margin-left: 15%;
-  display: block;
 }
-.fields p{
-  color: white;
-}
-.fields h2{
-  color: white;
-}
-.real-time_mgt{
-  background-image: url('images/real time tracking.jpg');
-  background-size: cover;
-  position: relative;
-  width: 35cm;
-  height: 12cm;
-  /* background-color: #006838; */
-  /* border-radius: 20px; */
-}
-.real-time_mgt::after{
-content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-.real-time-content{
-/* background-color: white; */
-z-index: 2;
-position:relative;
-/* border-radius: 30px; */
-}
-.lending_mgt{
-background-image: url('images/lendingmngt.jpg');
-background-size: cover;
-position: relative;
-  width: 35cm;
-  height: 12cm;
-  /* background-color: #006838; */
-  /* border-radius: 20px */
-}
-.lending_mgt::after{
-content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-.lending-content{
-z-index: 2;
-position:relative;
-}
-.lending-content h2{
-    margin-top: 0.8cm;
-    margin-left: 0.2cm;
-}
-
-
-.inventory_mgt{
-background-image: url('images/inventorymanagement.jpg');
-background-size: cover;
-position: relative;
-  width: 35cm;
-  height: 12cm;
-  /* background-color: #006838; */
-  /* border-radius: 20px; */
-}
-.inventory_mgt::after{
-content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-.inventory-content{
-z-index: 2;
-position:relative;
-}
-#quiz{
-  font-size: 250%;
-  height: 15vh;
-  text-align: center;
-    margin-top: 2em;
-    color: #FFA500;
-}
-@font-face {
-  font-family: body-light;
-  src: url(./fonts/fonnts.com-Magneta-Thin.otf);
-}
-@font-face {
-  font-family: body-bold;
-  src: url(./fonts/fonnts.com-Magneta-Book-Italic.otf);
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 100%;
-}
-body{
-  width: 99.2vw;
-  background-color: white;
-  font-family: body-light;
-  overflow-x: hidden;
-  /* position: relative; */
-  }
-  h1{
-    text-align: center;
-    font-size: 50px;
-  }
-.real-time-content p{
-    margin-top: 1cm;
-    font-size: 20px;
-    margin-left: 0.4cm;
-    /* padding: 0.5px; */
-}
-.real-time-content h2{
-  margin-top: 0.8cm;
-}
-h2{
-    margin-top: 2cm;
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+  h1 {
     font-size: 40px;
-    margin-left: 1cm;
-}
-.lending-content p{
-    margin-top: 1cm;
-    font-size: 20px;
-   margin-left: 0.4cm;
-   
-}
-.inventory-content p{
-    margin-top: 1cm;
-    font-size: 20px;
-    margin-left: 0.4cm;
-}
-.inventory-content h2{
-    margin-top: 0.8cm;
-    margin-left: 0.2cm;
-}
-#track{
-    text-align: center;
-    margin-top: 2cm;
-    font-size: 30px;
+  }
+  .fields {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 1rem;
+    margin: 3cm 5%;
+    width: 100%;
+    height: 100%; 
+    padding-left: 0.5rem;
+  }
+  .real-time_mgt,
+  .lending_mgt,
+  .inventory_mgt {
+    /* padding-right: -0.5rem;
+    padding-left: -0.5rem; */
+    /* width: 50%;
+    height: 50%; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* min-height: 280px; */
+  }
+  .real-time-content p,
+  .lending-content p,
+  .inventory-content p {
+    font-size: 1.4rem;
+  }
+  .real-time-content h2,
+  .lending-content h2,
+  .inventory-content h2{
+    font-size: 1.5rem;
+  }
+  #track{
+    /* text-align: center; */
+    margin-top: 2rem;
+    font-size: 1.4rem;
      color: #FFA500;
 }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
-.services{
-margin-top: 4%;
-}
-#needs{
-  color:#006838;
-}
-.fields{
-  display: flex;
-  gap: 1cm;
-  margin-top: 3cm;
-  margin-left: 1cm;
-  margin-right: 1cm;
-  width: 70%;
-  margin-left: 15%;
-  display: block;
-}
-.fields p{
-  color: white;
-}
-.fields h2{
-  color: white;
-}
-.real-time_mgt{
-  background-image: url('images/real time tracking.jpg');
-  background-size: cover;
-  position: relative;
-  width: 35cm;
-  height: 12cm;
-  /* background-color: #006838; */
-  /* border-radius: 20px; */
-}
-.real-time_mgt::after{
-content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-.real-time-content{
-/* background-color: white; */
-z-index: 2;
-position:relative;
-/* border-radius: 30px; */
-}
-.lending_mgt{
-background-image: url('images/lendingmngt.jpg');
-background-size: cover;
-position: relative;
-  width: 35cm;
-  height: 12cm;
-  /* background-color: #006838; */
-  /* border-radius: 20px */
-}
-.lending_mgt::after{
-content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-.lending-content{
-z-index: 2;
-position:relative;
-}
-.lending-content h2{
-    margin-top: 0.8cm;
-    margin-left: 1.2cm;
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  h1 {
+    font-size: 44px;
+  }
+  .fields {
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 3cm;
+  }
+  .real-time_mgt,
+  .lending_mgt,
+  .inventory_mgt {
+    width: 40%;
+    min-height: 300px;
+  }
+  .real-time-content p,
+  .lending-content p,
+  .inventory-content p {
+    font-size: 1.25rem;
+    padding: 1rem 1rem;
+  }
+  #quiz,
+  #track {
+    font-size: 1.5rem;
+  }
+  .real-time-content h2,
+  .lending-content h2,
+  .inventory-content h2{
+    font-size: 1.8rem;
+    /* margin-right: 0.5rem; */
+  }
 }
 
-
-.inventory_mgt{
-background-image: url('images/inventorymanagement.jpg');
-background-size: cover;
-position: relative;
-  width: 35cm;
-  height: 12cm;
-  /* background-color: #006838; */
-  /* border-radius: 20px; */
-}
-.inventory_mgt::after{
-content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-.inventory-content{
-z-index: 2;
-position:relative;
-}
-#quiz{
-  font-size: 250%;
-  height: 15vh;
-  text-align: center;
-    margin-top: 2em;
-    color: #FFA500;
-}
-@font-face {
-  font-family: body-light;
-  src: url(./fonts/fonnts.com-Magneta-Thin.otf);
-}
-@font-face {
-  font-family: body-bold;
-  src: url(./fonts/fonnts.com-Magneta-Book-Italic.otf);
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 100%;
-}
-body{
-  width: 99.2vw;
-  background-color: white;
-  font-family: body-light;
-  overflow-x: hidden;
-  /* position: relative; */
-  }
-  h1{
-    text-align: center;
-    font-size: 50px;
-  }
-.real-time-content p{
-    margin-top: 1cm;
-    font-size: 28px;
-    margin-left: 0.4cm;
-    /* padding: 0.5px; */
-}
-.real-time-content h2{
-  margin-top: 1.2cm;
-}
-h2{
-    margin-top: 2cm;
-    font-size: 40px;
-    margin-left: 1cm;
-}
-.lending-content p{
-    margin-top: 1cm;
-    font-size: 28px;
-   margin-left: 0.4cm;
-   
-}
-.inventory-content p{
-    margin-top: 1cm;
-    font-size: 28px;
-    margin-left: 0.4cm;
-}
-.inventory-content h2{
-    margin-top: 0.8cm;
-    margin-left: 1.2cm;
-}
-#track{
-    text-align: center;
-    margin-top: 2cm;
-    font-size: 30px;
-     color: #FFA500;
-}
-}
 
