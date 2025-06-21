@@ -80,6 +80,7 @@ width: 100%;
     height: 15vh;
     text-align: center;
     background-color: white;
+    color: orange;
   }
   #app{
     color:orange;
@@ -211,10 +212,10 @@ width: 100%;
     overflow-x: hidden;
   }
   #service{
-    font-size: 2.3em;
+    font-size: 1.8em;
   }
   .done h1 {
-    font-size: 2.8em;
+    font-size: 2.3em;
     margin-top: 1.5em;
     margin-bottom: 0.7em;
   }
@@ -328,88 +329,6 @@ width: 100%;
     height: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  .choice {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 0.5em;
-    width: 96%;
-    margin: 1em auto 3em auto;
-  }
-  #cost, #satisfied, #risk {
-    max-width: 400px;
-    min-width: 220px;
-    padding: 1em 0.7em;
-    margin: 0.7em 0.7em;
-    h3{
-      font-size: 2.1em;
-    }
-    p{
-      font-size: 1.4em;
-    }
-  }
-  .done h1 {
-    font-size: 3rem;
-    margin-top: 2.5em;
-    margin-bottom: 1em;
-  }
-  #cost-reduction, #satisfaction, #risk-mgt {
-    width: 58%;
-    max-width: 100px;
-  }
-  #service {
-    font-size: 2rem;
-    padding: 1em 0;
-  }
-  .onboarding-page-background-image {
-    height: 15rem;
-    padding: 2.2rem 1rem;
-    margin-top: 1.5em;
-  }
-  .onboarding-page {
-    min-height: 24rem;
-  }
-  .onboarding-page-images {
-    max-width: 360px;
-    margin: 0 auto;
-  }
-  .onboarding-page-images img {
-    max-width: 260px;
-    border-radius: 1.5rem;
-    margin-top: 8em;
-  }
-  .onboarding-page-text{
-    margin-left: -90em;
-    margin-top: 3em;
-  }
-  .onboarding-page-text h1 {
-    font-size: 1.9rem;
-  }
-  .onboarding-page-text p {
-    font-size: 1.5rem;
-  }
-  .onboarding-page-icons {
-    font-size: 1rem;
-    margin-top: -8em;
-    gap: 0.3rem;
-    padding: 0.7rem;
-  }
-  .onboarding-page-icons i {
-    padding: 1.3rem;
-    gap: 0.4rem;
-  }
-  .dots-container {
-    gap: 0.6rem;
-    margin-top: 1.2em;
-  }
-  .button-demo {
-    width: 12px;
-    height: 12px;
-  }
-}
 @media (min-width: 800px) and (max-width: 1280px) {
 
   .choice {
@@ -438,13 +357,13 @@ width: 100%;
     max-width: 100px;
   }
   #service {
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     padding: 1em 0;
   }
   .onboarding-page-background-image {
     height: 20rem;
     padding: 2.2rem 1rem;
-    margin-top: 1.5em;
+    margin-top: 3.em;
   }
   .onboarding-page {
     min-height: 24rem;
@@ -632,34 +551,33 @@ width: 100%;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    gap: 2em;
-    width: 96%;
+    width: 80%;
     margin: 2em auto 3em auto;
   }
   #cost, #satisfied, #risk {
-    max-width: 340px;
+    max-width: 30px;
     min-width: 220px;
     padding: 1em 0.7em;
     margin: 0.7em 0.7em;
     font-size: 1rem;
             h3{
-      font-size: 1.6em;
+      font-size: 1.0em;
     }
     p{
-      font-size: 1.2em;
+      font-size: 0.9em;
     }
   }
   .done h1 {
-    font-size: 2.9rem;
+    font-size: 1.9rem;
     margin-top: 2.5em;
     margin-bottom: 1em;
   }
   #cost-reduction, #satisfaction, #risk-mgt {
-    width: 55%;
+    width: 20%;
     max-width: 100px;
   }
   #service {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     padding: 1em 0;
   }
   .onboarding-page-background-image {
@@ -681,14 +599,14 @@ width: 100%;
     margin-top: 5em;
   }
   .onboarding-page-text{
-    margin-left: -90em;
+    margin-left: -88em;
     margin-top: 3em;
   }
   .onboarding-page-text h1 {
-    font-size: 2.6rem;
+    font-size: 1.8rem;
   }
   .onboarding-page-text p {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
   }
   .onboarding-page-icons {
     font-size: 1.6rem;
@@ -767,5 +685,89 @@ width: 100%;
   .button-demo {
     width: 10px;
     height: 10px;
+  }
+}
+@media (max-width: 768px) and (min-width: 671px) {
+
+  .choice {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5em;
+    width: 96%;
+    margin: 1em auto 3em auto;
+  }
+  #cost, #satisfied, #risk {
+    max-width: 400px;
+    min-width: 220px;
+    padding: 1em 0.7em;
+    margin: 0.7em 0.7em;
+    h3{
+      font-size: 1.7em;
+    }
+    p{
+      font-size: 1.3em;
+    }
+  }
+  .done h1 {
+    font-size: 2.4em;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    color: orange;
+  }
+  #cost-reduction, #satisfaction, #risk-mgt {
+    width: 58%;
+    max-width: 100px;
+  }
+  #service {
+    font-size: 1.5em;
+    padding: 1em 0;
+    color: orange;
+  }
+  .onboarding-page-background-image {
+    height: 20rem;
+    padding: 2.2rem 1rem;
+    margin-top: 1.5em;
+  }
+  .onboarding-page {
+    min-height: 24rem;
+  }
+  .onboarding-page-images {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .onboarding-page-images img {
+    max-width: 260px;
+    border-radius: 1.5rem;
+    margin-top: 4em;
+  }
+  .onboarding-page-text{
+    margin-left: -90em;
+    margin-top: 3em;
+  }
+  .onboarding-page-text h1 {
+    font-size: 1.9rem;
+  }
+  .onboarding-page-text p {
+    font-size: 1.5rem;
+  }
+  .onboarding-page-icons {
+    font-size: 1rem;
+    margin-top: -8em;
+    gap: 0.3rem;
+    padding: 0.7rem;
+  }
+  .onboarding-page-icons i {
+    padding: 1.3rem;
+    gap: 0.4rem;
+  }
+  .dots-container {
+    gap: 0.6rem;
+    margin-top: 1.2em;
+  }
+  .button-demo {
+    width: 12px;
+    height: 12px;
   }
 }
