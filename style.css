@@ -283,7 +283,6 @@ h2{
   }
   .fields {
     display: flex;
-    /* flex-direction: row; */
     gap: 1rem;
     margin: 3cm 5%;
     width: 100%;
@@ -293,13 +292,9 @@ h2{
   .real-time_mgt,
   .lending_mgt,
   .inventory_mgt {
-    /* padding-right: -0.5rem;
-    padding-left: -0.5rem; */
-    /* width: 50%;
-    height: 50%; */
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    /* min-height: 280px; */
+   
   }
   .real-time-content p,
   .lending-content p,
@@ -312,7 +307,7 @@ h2{
     font-size: 1.5rem;
   }
   #track{
-    /* text-align: center; */
+   
     margin-top: 2rem;
     font-size: 1.4rem;
      color: #FFA500;
@@ -350,7 +345,7 @@ h2{
   .lending-content h2,
   .inventory-content h2{
     font-size: 1.8rem;
-    /* margin-right: 0.5rem; */
+    
   }
 }
 
