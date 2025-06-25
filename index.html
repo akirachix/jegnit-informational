@@ -1,78 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgriTech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no  -referrer" /> 
     <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>AgriTech Informational Website</title>
 </head>
+
 <body>
+    <!-- Our app --> 
     <section>
         <div class="done">
             <h1>Why choose AgriTech?</h1>
             <div class="choice">
-           <div id ="cost">
-                <img src="images/costR.png" id="cost-reduction">
-                <h3>Cost reduction</h3>
-                <p>Allows access to machine <br>loans in groups which <br>in turn reduces
-                    the cost <br>compared to individual loaning</p>
-           </div>
-            <div id="satisfied" >
-                <img src="images/customersatisfied.png" id="satisfaction">
-                <h3>Enhanced customer experience</h3>
-                <p>Faster machine loan <br>approvals and <br> convenient online <br>applications.</p>
-            </div>
-            <div id="risk">
-                <img src="images/riskmgt.png" id="risk-mgt">
-                <h3>Improved risk management</h3>
-                <p>Software that can identify<br> potential performance issues <br>or fraudulent activities <br>early on.</p>
-            </div>
+                <div class="feature">
+                    <img src="Images/costR.png" class="feature-icon">
+                    <h3>Cost reduction</h3>
+                    <p>
+                        Allows access to machine <br>loans in groups which <br>
+                        in turn reduces the cost <br>compared to individual loaning
+                    </p>
+                </div>
+                <div class="feature">
+                    <img src="Images/customersatisfied.png" class="feature-icon">
+                    <h3>Enhanced customer experience</h3>
+                    <p>
+                        Faster machine loan <br>approvals and <br> convenient online <br>applications.
+                    </p>
+                </div>
+                <div class="feature">
+                    <img src="Images/riskmgt.png" class="feature-icon">
+                    <h3>Improved risk management</h3>
+                    <p>
+                        Software that can identify<br> potential performance issues <br>
+                        or fraudulent activities <br>early on.
+                    </p>
+                </div>
             </div>
         </div>
         <div id="service">
-            <h1 id="app">An application that </h1> 
+            <h1 id="app">An application that </h1>
             <h1 id="use">is easy to use</h1>
         </div>
-        
-        <section class="onboarding-page-background-image"></section>
+        <div class="onboarding-page-background-image"></div>
         <div class="onboarding-page">
             <div class="onboarding-page-images active">
-                <img src="images/SIGNUP SCREEN.png" alt="Sign Up Screen">
-                <div class="onboarding-page-text">
+                <img src="Images/SIGNUP SCREEN.png" alt="Sign Up Screen">
+                <div class="onboarding-text">
                     <h1>Step 1</h1>
                     <p>Register as a user based on your role.</p>
+                    </div>
                 </div>
-            </div>
+
             <div class="onboarding-page-images">
-                <img src="images/SIGN UP SCREEN.png" alt="Sign Up Screen">
-                <div class="onboarding-page-text">
+                <img src="Images/SIGN UP SCREEN.png" alt="Sign Up Screen">
+                    <div class="onboarding-text">
                     <h1>Step 2</h1>
                     <p>Complete your profile details.</p>
-                </div>
+                        </div>
             </div>
             <div class="onboarding-page-images">
-                <img src="images/LOGIN SCREEN.png" alt="Login Screen">
-                <div class="onboarding-page-text">
+                <img src="Images/LOGIN SCREEN.png" alt="Login Screen">
+                    <div class="onboarding-text">
                     <h1>Step 3</h1>
                     <p>Log in to access your account.</p>
-                </div>
+                        </div>
             </div>
             <div class="onboarding-page-images">
-                <img src="images/iPhone 16 Pro Max - 42.png" alt="Feature Screen 1">
-                <div class="onboarding-page-text">
+                <img src="Images/iPhone 16 Pro Max - 42.png" alt="Feature Screen 1">
+                    <div class="onboarding-text">
                     <h1>Step 4</h1>
                     <p>Explore features tailored to your needs.</p>
-                </div>
+                        </div>
             </div>
             <div class="onboarding-page-images">
-                <img src="images/iPhone 16 Pro Max - 41.png" alt="Feature Screen 2">
-                <div class="onboarding-page-text">
+                <img src="Images/iPhone 16 Pro Max - 41.png" alt="Feature Screen 2">
+                    <div class="onboarding-text">
                     <h1>Step 5</h1>
                     <p>Start using the AgriTech platform.</p>
-                </div>
+                        </div>
             </div>
             <div class="onboarding-page-icons">
                 <i class="fa-solid fa-arrow-left" onclick="plusDivs(-1)"></i>
@@ -88,6 +97,171 @@
         </div>
     </section>
 
-    <script src="index.js"></script>
+    <!-- Why -->
+    <div id="heading">What They Ask About Us?</div>
+    <div class="faqs" >
+        <div class="questions">
+            <h3>Frequently Asked <br> Questions</h3>
+            <p>
+                Have questions ? here you will find
+                the answers most valued by our
+                partners along with access to step
+                by step instructions and support
+            </p>
+            <button class="learn_morebtn">Learn More</button>
+        </div>
+        <div class="faqs-list">
+            <button class="faq-btn">
+                <i class="fa fa-plus"></i>
+                <span>How do I change my password?</span>
+            </button>
+            <div class="faq-content">
+                <p>You can change your password in your account settings under "Security".</p>
+            </div>
+            <button class="faq-btn">
+                <i class="fa fa-plus"></i>
+                <span>How do I request for a machine?</span>
+            </button>
+            <div class="faq-content">
+                <p>Go to 'Request Machine' on your dashboard, fill the form and submit.</p>
+            </div>
+            <button class="faq-btn">
+                <i class="fa fa-plus"></i>
+                <span>How do I pay?</span>
+            </button>
+            <div class="faq-content">
+                <p>Payments can be made online through our payment portal using your MTN account.</p>
+            </div>
+            <button class="faq-btn">
+                <i class="fa fa-plus"></i>
+                <span>How can I view my loan requests?</span>
+            </button>
+            <div class="faq-content">
+                <p>Head to your dashboard and click on the 'Requests' to see your loan status and history.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonial-section" id="testimonials">
+        <h2>What They Say About Us</h2>
+        <div class="testimonial-container">
+            <button id="prevBtn" class="nav-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="testimonial-wrapper" id="testimonialWrapper">
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>AgriTech solved a lot of problems that were weighing my mind. Now I can access equipments at
+                        a
+                        cheap price.</p>
+                    <div class="card-footer">
+                        <span class="circle"></span>
+                        <span class="quote">”</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>AgriTech services are on point. The cooperative gets equipments. This quickens tea planting
+                        process</p>
+                    <div class="card-footer">
+                        <span class="circle"></span>
+                        <span class="quote">”</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>AgriTech facilitated our tea production process since we can access the required equipment.
+                    </p>
+                    <div class="card-footer">
+                        <span class="circle"></span>
+                        <span class="quote">”</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>AgriTech is a splendid platform that made it possible for our cooperative to borrow
+                        equipments.
+                    </p>
+                    <div class="card-footer">
+                        <span class="circle"></span>
+                        <span class="quote">"</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>AgriTech is a splendid platform that made it possible for our cooperative to borrow
+                        equipments.
+                    </p>
+                    <div class="card-footer">
+                        <span class="circle"></span>
+                        <span class="quote">”</span>
+                    </div>
+                </div>
+            </div>
+            <button id="nextBtn" class="nav-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <footer id="contact_us">
+        <div class="footer-logo">
+            <img src="/Images/AgriTecklogo.png" alt="AgriTech logo" />
+            <h2>AgriTech</h2>
+        </div>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact us</h3>
+                <p>+250789345768</p>
+                <p>infor@agritech.com</p>
+                <a href="#" class="btn-link-app">Direct app link</a>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <a href="#">Terms & conditions</a>
+                <a href="#">Help desk</a>
+            </div>
+            <div class="footer-column" style="margin-right: 10%;">
+                <h3>Get in touch</h3>
+                <div class="social-icons">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <a href="#"> Facebook</a><br>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="#">Instagram</a><br>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+                <a href="#" class="btn-link">Download App</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© Copyright</span>
+        </div>
+        <div class="bottom"></div>
+    </footer>
+    <script src="index.js"> </script>
 </body>
+
 </html>
