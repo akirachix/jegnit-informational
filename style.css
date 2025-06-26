@@ -101,12 +101,7 @@ z-index: 2;
 position:relative;
 
 }
-#quiz{
-    text-align: center;
-    margin-top: 2cm;
-    font-size: 30px;
-     color: #FFA500;
-}
+
 @font-face {
   font-family: body-light;
   src: url(./fonts/fonnts.com-Magneta-Thin.otf);
@@ -203,8 +198,7 @@ h2{
   .inventory-content p {
     font-size: 1.2rem;
   }
-  #track,
-  #quiz {
+  #track{
     font-size: 1.5rem;
     margin-top: 1cm;
   }
@@ -230,8 +224,7 @@ h2{
   .inventory-content p {
     font-size: 1.7rem;
   }
-  #track,
-  #quiz {
+  #track{
     font-size: 2rem;
   }
 }
@@ -337,7 +330,7 @@ h2{
     font-size: 1.25rem;
     padding: 1rem 1rem;
   }
-  #quiz,
+  
   #track {
     font-size: 1.5rem;
   }
