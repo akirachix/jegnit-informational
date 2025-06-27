@@ -1,3 +1,26 @@
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  let isOpen = false;
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    isOpen = !isOpen;
+    hamburger.innerHTML = isOpen
+      ? '<i class="fas fa-times"></i>'
+      : '<i class="fas fa-bars"></i>';
+  });
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (isOpen) {
+        navMenu.classList.remove('active');
+        hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+        isOpen = false;
+      }
+    });
+  });
+
 document.addEventListener("DOMContentLoaded", function() {
     let slideIndex = 1;
     showDivs(slideIndex);
@@ -28,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Active slide:", slides[slideIndex - 1]);
         console.log("Active dot:", dots[slideIndex - 1]);
     }
+
 });
 const wrapper = document.getElementById('testimonialWrapper');
 const nextBtn = document.getElementById('nextBtn');
@@ -51,12 +75,12 @@ nextBtn.addEventListener('click', () => {
     setTimeout(() => {
       wrapper.scrollTo({ left: 0 });
       currentIndex = 0;
-    }, 500); 
+    }, 500);
   }
 });
 prevBtn.addEventListener('click', () => {
   if (currentIndex === 0) {
-  
+
     wrapper.scrollTo({
       left: getScrollAmount() * totalCards,
       behavior: 'instant'
@@ -77,7 +101,7 @@ document.querySelectorAll('.faq-btn').forEach((btn) => {
         if (b.nextElementSibling) b.nextElementSibling.style.display = 'none';
       }
     });
-   
+
     btn.classList.toggle('active');
     const icon = btn.querySelector('i');
     if (btn.classList.contains('active')) {
