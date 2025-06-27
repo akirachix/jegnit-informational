@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         isOpen = false;
       }
     });
-  });
+  })});
 
 document.addEventListener("DOMContentLoaded", function() {
     let slideIndex = 1;
@@ -119,3 +119,4 @@ window.addEventListener("DOMContentLoaded", () => {
   const firstBtn = document.querySelector('.faq-btn');
   if (firstBtn) firstBtn.click();
 });
+
